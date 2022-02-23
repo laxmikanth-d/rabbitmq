@@ -1,0 +1,14 @@
+Rabbit MQ
+
+
+Installation:
+
+https://www.rabbitmq.com/install-homebrew.html
+
+
+Start and stop service:
+1.	Go to terminal
+2.	Run to Start 
+	- brew services start rabbitmq
+3.	Run to Stop
+	- brew services stop rabbitmq

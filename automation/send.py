@@ -5,6 +5,10 @@ connection = pika.BlockingConnection(
     pika.ConnectionParameters(host='localhost')
 )
 channel = connection.channel()
+#   When the receiver waits for messages continuously
+#   prefetch_count = 1 will make sure any receiver will get only
+#   receive 1 message before it acknowledges to get more messages
+channel.basic_qos(prefetch_count=1)
 
 # To make messages durable. Following settings are needed.
 #   1. durable = True ---> When creating queue.

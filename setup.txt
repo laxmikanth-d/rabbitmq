@@ -12,3 +12,6 @@ Start and stop service:
 	- brew services start rabbitmq
 3.	Run to Stop
 	- brew services stop rabbitmq
+4.	Once service is started, navigate to http://localhost:15672/
+5.	Username/Password: guest/guest
+
